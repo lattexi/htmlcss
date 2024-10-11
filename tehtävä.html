@@ -27,53 +27,135 @@
         </form>
     </dialog>
 
-    <nav>
-        <h1 id="kasvu">Kasvu</h1>
-        <ul>
-            <li>
-                <a href="#home"><i class="fa-solid fa-house"></i><span class="icon-text"> Etusivu</span></a>
-            </li>
-            <li>
-                <a href="#news"><i class="fa-solid fa-bars"></i><span class="icon-text"> Ruokalista</span></a>
-            </li>
-            <li>
-                <a href="#contact"><i class="fa-solid fa-comment"></i><span class="icon-text"> Ota yhteyttä</span></a>
-            </li>
-            <li>
-                <a href="#about"><i class="fa-solid fa-info"></i><span class="icon-text"> Tietoa meistä</span></a>
-            </li>
-        </ul>
-        <button id="login">
-            <i class="fa-solid fa-right-to-bracket"></i>
-        </button>
-    </nav>
+    <div id="header">
+        <nav>
+            <h1 id="kasvu">Kasvu</h1>
+            <button id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul>
+                <li>
+                    <a href="#home"><i class="fa-solid fa-house"></i><span class="icon-text"> Etusivu</span></a>
+                </li>
+                <li>
+                    <a href="#news"><i class="fa-solid fa-bars"></i><span class="icon-text"> Ruokalista</span></a>
+                </li>
+                <li>
+                    <a href="#contact"><i class="fa-solid fa-comment"></i><span class="icon-text"> Ota
+                            yhteyttä</span></a>
+                </li>
+                <li>
+                    <a href="#about"><i class="fa-solid fa-info"></i><span class="icon-text"> Tietoa meistä</span></a>
+                </li>
+            </ul>
+            <button id="login">
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+        </nav>
 
-    <section>
-        <h1 id="hero-image">Tausta</h1>
-    </section>
+        <section id="hero-image">
+            <h1>Ravintola Kasvu</h1>
+            <p>Hyvää ruokaa ja hyvää elämää</p>
+        </section>
+    </div>
 
     <main>
-        <section class="box">
-            <h1>Menu</h1>
-            <h2>Alkuruoat</h2>
-            <ul>
-                <li>Alkuruoka 1</li>
-                <li>Alkuruoka 2</li>
-                <li>Alkuruoka 3</li>
-            </ul>
-            <h2>Pääruoat</h2>
-            <ul>
-                <li>Pääruoka 1</li>
-                <li>Pääruoka 2</li>
-                <li>Pääruoka 3</li>
-            </ul>
-            <h2>Jälkiruoat</h2>
-            <ul>
-                <li>Jälkiruoka 1</li>
-                <li>Jälkiruoka 2</li>
-                <li>Jälkiruoka 3</li>
-            </ul>
+        <section class="filter">
+            <h1>Are you bulking or cutting?</h1>
+            <div class="filter_buttons">
+                <button id="bulking">Bulking</button>
+                <button id="cutting">Cutting</button>
+            </div>
         </section>
+
+        <section class="menu">
+            <article id="bulk">
+                <img id="ruoka" src="ruoka.avif" alt="ruoka">
+                <div>
+                    <h1>Bulk item 1</h1>
+                    <p>
+                        Protein: 20g
+                        <br>Carbs: 50g
+                        <br>Fat: 10g
+                        <br>Calories: 400
+                    </p>
+                    <h2>Price: 10€</h2>
+                </div>
+            </article>
+            <article id="bulk">
+                <img id="ruoka" src="ruoka.avif" alt="ruoka">
+                <div>
+                    <h1>Bulk item 2</h1>
+                    <p>
+                        Protein: 30g
+                        <br>Carbs: 40g
+                        <br>Fat: 15g
+                        <br>Calories: 450
+                    </p>
+                    <h2>Price: 12€</h2>
+                </div>
+            </article>
+            <article id="bulk">
+                <img id="ruoka" src="ruoka.avif" alt="ruoka">
+                <div>
+                    <h1>Bulk item 3</h1>
+                    <p>
+                        Protein: 25g
+                        <br>Carbs: 45g
+                        <br>Fat: 12g
+                        <br>Calories: 420
+                    </p>
+                    <h2>Price: 11€</h2>
+                </div>
+            </article>
+            <article id="cut">
+                <img id="ruoka" src="ruoka.avif" alt="ruoka">
+                <div>
+                    <h1>Cut item 1</h1>
+                    <p>
+                        Protein: 30g
+                        <br>Carbs: 20g
+                        <br>Fat: 5g
+                        <br>Calories: 300
+                    </p>
+                    <h2>Price: 9€</h2>
+                </div>
+            </article>
+            <article id="cut">
+                <img id="ruoka" src="ruoka.avif" alt="ruoka">
+                <div>
+                    <h1>Cut item 2</h1>
+                    <p>
+                        Protein: 25g
+                        <br>Carbs: 15g
+                        <br>Fat: 3g
+                        <br>Calories: 250
+                    </p>
+                    <h2>Price: 8€</h2>
+                </div>
+            </article>
+            <article id="cut">
+                <img id="ruoka" src="ruoka.avif" alt="ruoka">
+                <div>
+                    <h1>Cut item 3</h1>
+                    <p>
+                        Protein: 20g
+                        <br>Carbs: 10g
+                        <br>Fat: 2g
+                        <br>Calories: 200
+                    </p>
+                    <h2>Price: 7€</h2>
+                </div>
+            </article>
+        </section>
+
+        <section class="filter">
+            <div class="filter_buttons">
+                <button id="all">Show all</button>
+            </div>
+        </section>
+
+
         <section class="box" id="about">
             <img id="ravintola" src="Ravintola.webp" alt="Kuva">
             <h1>Tietoa meistä</h1>
