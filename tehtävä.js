@@ -22,8 +22,8 @@ const bulkFilterButton = document.getElementById('bulking');
 const cutFilterButton = document.getElementById('cutting');
 const showAll = document.getElementById('all');
 
-const bulkFilter = document.querySelectorAll('#bulk');
-const cutFilter = document.querySelectorAll('#cut');
+const bulkFilter = document.querySelectorAll('.bulk');
+const cutFilter = document.querySelectorAll('.cut');
 
 bulkFilterButton.addEventListener('click', () => {
     bulkFilter.forEach(element => {

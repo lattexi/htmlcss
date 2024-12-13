@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurant website">
     <title>Ravintola Kasvu</title>
     <link rel="stylesheet" href="tehtävä.css">
     <script src="tehtävä.js" defer></script>
@@ -15,14 +16,15 @@
     <dialog id="dialog">
         <form>
             <fieldset>
-                <h2>Kirjaudu sisään</h2>
+                <legend>Kirjaudu sisään</legend>
                 <label for="nimi">Nimi</label>
                 <input type="text" id="nimi" name="nimi" minlength="3">
                 <label for="sähköposti">Sähköposti</label>
                 <input type="email" id="sähköposti" name="sähköposti">
                 <label for="salasana">Salasana</label>
                 <input type="password" id="salasana" name="salasana">
-                <button>Kirjaudu</button>
+                <button title="submit">Kirjaudu</button>
+                <button title="cancel">Peruuta</button>
             </fieldset>
         </form>
     </dialog>
@@ -30,130 +32,131 @@
     <div id="header">
         <nav>
             <h1 id="kasvu">Kasvu</h1>
-            <button id="menu-toggle">
+            <button title="menu-toggle" id="menu-toggle">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <ul>
                 <li>
-                    <a href="#home"><i class="fa-solid fa-house"></i><span class="icon-text"> Etusivu</span></a>
+                    <a href="#header"><i class="fa-solid fa-house" aria-hidden="false"></i><span class="icon-text">
+                            Etusivu</span></a>
                 </li>
                 <li>
-                    <a href="#news"><i class="fa-solid fa-bars"></i><span class="icon-text"> Ruokalista</span></a>
+                    <a href="#list"><i class="fa-solid fa-bars"></i><span class="icon-text"> Ruokalista</span></a>
                 </li>
                 <li>
-                    <a href="#contact"><i class="fa-solid fa-comment"></i><span class="icon-text"> Ota
+                    <a href=""><i class="fa-solid fa-comment"></i><span class="icon-text"> Ota
                             yhteyttä</span></a>
                 </li>
                 <li>
                     <a href="#about"><i class="fa-solid fa-info"></i><span class="icon-text"> Tietoa meistä</span></a>
                 </li>
             </ul>
-            <button id="login">
+            <button title="login" id="login">
                 <i class="fa-solid fa-right-to-bracket"></i>
             </button>
         </nav>
 
         <section id="hero-image">
             <h1>Ravintola Kasvu</h1>
-            <p>Hyvää ruokaa ja hyvää elämää</p>
+            <h2>Hyvää ruokaa ja hyvää elämää</h2>
         </section>
     </div>
 
     <main>
-        <section class="filter">
+        <section class="filter" id="list">
             <h1>Are you bulking or cutting?</h1>
             <div class="filter_buttons">
-                <button id="bulking">Bulking</button>
-                <button id="cutting">Cutting</button>
+                <button id="bulking" aria-label="Bulking">Bulking</button>
+                <button id="cutting" aria-label="Cutting">Cutting</button>
             </div>
         </section>
 
-        <section class="menu">
-            <article id="bulk">
-                <img id="ruoka" src="ruoka.avif" alt="ruoka">
+        <div class="menu">
+            <article class="bulk">
+                <img class="ruoka" src="ruoka.avif" alt="ruoka">
                 <div>
-                    <h1>Bulk item 1</h1>
+                    <h2>Bulk item 1</h2>
                     <p>
                         Protein: 20g
                         <br>Carbs: 50g
                         <br>Fat: 10g
                         <br>Calories: 400
                     </p>
-                    <h2>Price: 10€</h2>
+                    <h3>Price: 10€</h3>
                 </div>
             </article>
-            <article id="bulk">
-                <img id="ruoka" src="ruoka.avif" alt="ruoka">
+            <article class="bulk">
+                <img class="ruoka" src="ruoka.avif" alt="ruoka">
                 <div>
-                    <h1>Bulk item 2</h1>
+                    <h2>Bulk item 2</h2>
                     <p>
                         Protein: 30g
                         <br>Carbs: 40g
                         <br>Fat: 15g
                         <br>Calories: 450
                     </p>
-                    <h2>Price: 12€</h2>
+                    <h3>Price: 12€</h3>
                 </div>
             </article>
-            <article id="bulk">
-                <img id="ruoka" src="ruoka.avif" alt="ruoka">
+            <article class="bulk">
+                <img class="ruoka" src="ruoka.avif" alt="ruoka">
                 <div>
-                    <h1>Bulk item 3</h1>
+                    <h2>Bulk item 3</h2>
                     <p>
                         Protein: 25g
                         <br>Carbs: 45g
                         <br>Fat: 12g
                         <br>Calories: 420
                     </p>
-                    <h2>Price: 11€</h2>
+                    <h3>Price: 11€</h3>
                 </div>
             </article>
-            <article id="cut">
-                <img id="ruoka" src="ruoka.avif" alt="ruoka">
+            <article class="cut">
+                <img class="ruoka" src="ruoka.avif" alt="ruoka">
                 <div>
-                    <h1>Cut item 1</h1>
+                    <h2>Cut item 1</h2>
                     <p>
                         Protein: 30g
                         <br>Carbs: 20g
                         <br>Fat: 5g
                         <br>Calories: 300
                     </p>
-                    <h2>Price: 9€</h2>
+                    <h3>Price: 9€</h3>
                 </div>
             </article>
-            <article id="cut">
-                <img id="ruoka" src="ruoka.avif" alt="ruoka">
+            <article class="cut">
+                <img class="ruoka" src="ruoka.avif" alt="ruoka">
                 <div>
-                    <h1>Cut item 2</h1>
+                    <h2>Cut item 2</h2>
                     <p>
                         Protein: 25g
                         <br>Carbs: 15g
                         <br>Fat: 3g
                         <br>Calories: 250
                     </p>
-                    <h2>Price: 8€</h2>
+                    <h3>Price: 8€</h3>
                 </div>
             </article>
-            <article id="cut">
-                <img id="ruoka" src="ruoka.avif" alt="ruoka">
+            <article class="cut">
+                <img class="ruoka" src="ruoka.avif" alt="ruoka">
                 <div>
-                    <h1>Cut item 3</h1>
+                    <h2>Cut item 3</h2>
                     <p>
                         Protein: 20g
                         <br>Carbs: 10g
                         <br>Fat: 2g
                         <br>Calories: 200
                     </p>
-                    <h2>Price: 7€</h2>
+                    <h3>Price: 7€</h3>
                 </div>
             </article>
-        </section>
+        </div>
 
-        <section class="filter">
+        <div class="filter">
             <div class="filter_buttons">
-                <button id="all">Show all</button>
+                <button id="all" aria-label="show all">Show all</button>
             </div>
-        </section>
+        </div>
 
 
         <section class="box" id="about">
@@ -166,7 +169,7 @@
                 consectetur facere suscipit commodi, sit, est aperiam rerum, distinctio quam porro iure veritatis
                 voluptatibus.
             </p>
-            <img id="kana" src="kana.png" alt="Kuva">
+            <img id="kana" src="kana.png" alt="Kana-kuva">
         </section>
     </main>
 </body>
